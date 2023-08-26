@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Dancerfly is no more</title>
+        <style type="text/css">
+            * { margin: 0; padding: 0; }
+            :root {
+                --orange: #de8e0f;
+                --orange-pale: #FEC;
+                --orange-vivid: #F60;
+                --orange-dark: #210;
+                font-size: 10px;
+                background: #FFF;
+                color: #222;
+                border-top: 4rem solid var(--orange);
+            }
+            body {
+                padding: 5rem;
+                font-size: 3rem;
+                line-height: 4rem;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                max-width: 90rem;
+                margin: 0 auto;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+            a {
+                background-color: var(--orange-pale);
+                margin: -.5rem;
+                padding: .5rem;
+                border-radius: .4rem;
+                color: var(--orange-dark);
+                text-decoration: none;
+            }
+            a:hover {
+                background-color: var(--orange-vivid);
+                color: #FFF;
+            }
+            .dancers-img {
+                max-width: calc(100% + 20rem);
+                margin: 0 -10rem;
+                display: block;
+                margin-bottom: 2rem;
+            }
+            .dancers-img-sm {
+                display: none;
+            }
+            @media (max-width: 90rem) {
+                .dancers-img, .dancers-img-sm {
+                    max-width: 100%;
+                    margin: 0 0 2rem;
+                }
+            }
+            @media (max-width: 40rem) {
+                .dancers-img-sm {
+                    display: block;
+                }
+                .dancers-img {
+                    display: none;
+                }
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                margin-left: -1rem;
+                flex-basis: 50%;
+            }
+            .action {
+                flex-grow: 0;
+                flex-shrink: 0;
+                margin: 1rem;
+                padding: 1.5rem 2rem;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+            .action span {
+                display: block;
+            }
+            .action-title {
+                font-weight: bold;
+                margin-bottom: .5rem;
+            }  
+            @media (max-width: 40rem) {
+                .actions {
+                    flex-direction: column;
+                }
+                .action {
+                    margin: 1rem 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <strong>Dancerfly</strong> was an event ticketing service for social dances built and run by social dancers.
+            It was created by <a href="https://chromamine.com/">Harris Lapiroff</a>, <a href="https://github.com/melinath">Stephen Burrows</a>,
+            and <a href="https://github.com/nmorduch">Naomi Morduch Toubman</a> in 2014. Over its nine years of
+            continous operation it was maintained by a number of <a href="https://github.com/dancerfly/django-brambling/graphs/contributors">others</a>
+            and hosted ticketing for over 200 events.
+        </p>
+        <p>
+            Dancerfly was shut down in August 2023.
+        </p>
+        <p>
+            It leaves one last gift to the dance community: When we launched
+            Dancerfly, we commissioned artist <a href="https://lucybellwood.com/">Lucy Bellwood</a> to create some illustrations of dancers that represented our
+            diverse dance community. In collaboration with Lucy, we're releasing those illustrations under a
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0 license</a>. The files for these
+            illustrations can be found below.
+        </p>
+        <img class="dancers-img" src="static/dancers.png" alt="A set of diverse dancers wearing orange clothes and sporting blue wings." />
+        <img class="dancers-img-sm" src="static/dancers-sm.png" alt="A dancer couple wearing orange clothes and sporting blue wings." />
+        <div class="actions">
+            <a href="downloads/DancerflyGraphics.zip" class="action">
+                <span class="action-title">Dancerfly Graphics</span>
+                <span class="action-detail">Formats: TIFF, PNG, PSD</span>
+            </a>
+            <a href="https://github.com/dancerfly/django-brambling/" class="action">
+                <span class="action-title">Code</span>
+                <span class="action-detail">GitHub-hosted, Django/Python</span>
+            </a>
+        </div>
+    </body>
+</html>
